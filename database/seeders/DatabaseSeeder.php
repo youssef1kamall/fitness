@@ -20,11 +20,13 @@ class DatabaseSeeder extends Seeder
             'email' => 'user@example.com',
         ]);
 
-        User::factory()->create([
-            'name' => 'Admin User',
-            'email' => 'admin@example.com',
-            'password' => bcrypt('password'),
-            'is_admin' => true,
-        ]);
+        \App\Models\User::updateOrCreate(
+            ['email' => 'admin@example.com'],
+            [
+                'name' => 'Admin User',
+                'password' => bcrypt('password'),
+                // 'is_admin' => true, // Only if your users table has this column
+            ]
+        );
     }
 }
