@@ -22,10 +22,10 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
     // Trash routes first (to avoid conflicts)
     Route::get('plans/trash', [MembershipPlanController::class, 'trash'])->name('plans.trash');
     Route::post('plans/{id}/restore', [MembershipPlanController::class, 'restore'])->name('plans.restore');
-    
-    // Status toggle
+
+    // Status toggles
     Route::post('plans/{plan}/toggle-status', [MembershipPlanController::class, 'toggleStatus'])->name('plans.toggle-status');
-    
+
     // Membership Plan CRUD
     Route::resource('plans', MembershipPlanController::class);
 });
