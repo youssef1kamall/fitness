@@ -15,6 +15,7 @@
                 backdrop-filter: blur(6px);
             }
         </style>
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="min-h-screen font-sans">
         <nav class="glass shadow mb-8">
