@@ -43,7 +43,7 @@
     <div class="glass p-10 rounded-xl shadow-2xl text-center max-w-lg w-full">
         <h1 class="text-4xl font-extrabold mb-4 text-yellow-400 tracking-wide">Welcome to Fitpass HOPn</h1>
         <p class="mb-6 text-gray-200 text-lg">Your fitness journey starts here. Manage your gym memberships with style and power.</p>
-        <div class="flex justify-center space-x-4">
+        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-x-4 sm:space-y-0">
             <a href="/admin/plans" class="inline-block bg-white text-black font-bold py-3 px-8 rounded-full shadow-lg slide-background">Go to Admin Panel</a>
             <a href="/register" class="inline-block bg-white text-black font-bold py-3 px-8 rounded-full shadow-lg slide-background">Register</a>
         </div>

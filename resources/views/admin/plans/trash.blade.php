@@ -98,6 +98,7 @@
                 @endforelse
             </tbody>
         </table>
+        <div class="block sm:hidden text-xs text-gray-500 mt-2 text-center">Scroll to see the rest of the table content</div>
     </div>
 </div>
 @endsection 
