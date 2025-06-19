@@ -8,4 +8,5 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    base: 'https://fitness-production-1a41.up.railway.app/',
 });
